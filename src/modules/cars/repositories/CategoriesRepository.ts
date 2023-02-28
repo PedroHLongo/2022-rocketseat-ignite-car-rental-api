@@ -29,9 +29,7 @@ class CategoriesRepository implements ICategoriesRepository {
   }
 
   existsByName(name: string): boolean {
-    const category = this.categories.some((category) => category.name === name);
-
-    return category;
+    return this.categories.some((category) => category.name === name);
   }
 }
 
